@@ -110,15 +110,15 @@ function checkover(over) {
 }
 
 function wickets(player) {
-  currentplayer = 0;
   currentplayer = player;
   function wic() {
-    if (player <= 0) {
-      alert("your have no wicket left");
-    } else {
-      currentplayer -= 1;
+    if (currentplayer != 0) {
       curentwicket.innerHTML = currentplayer;
+      currentplayer -= 1;
     }
+    wining.innerHTML = "your innings is over";
+    bluer();
+    inningover();
   }
   divwicket.addEventListener("click", wic);
   wicketrun.addEventListener("click", wic);
