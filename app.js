@@ -112,13 +112,14 @@ function checkover(over) {
 function wickets(player) {
   currentplayer = player;
   function wic() {
-    if (currentplayer != 0) {
-      curentwicket.innerHTML = currentplayer;
-      currentplayer -= 1;
+    
+    currentplayer -= 1;
+    curentwicket.innerHTML = currentplayer;
+    if (currentplayer == 0) {
+      wining.innerHTML = "your innings is over";
+      bluer();
+      inningover();
     }
-    wining.innerHTML = "your innings is over";
-    bluer();
-    inningover();
   }
   divwicket.addEventListener("click", wic);
   wicketrun.addEventListener("click", wic);
@@ -298,13 +299,15 @@ function secwickets(secplayer) {
   let currentplayer2 = 0;
   curentwicket.innerHTML = currentplayer2;
   currentplayer2 = secplayer;
-  function wic2() {
-    if (secplayer <= 0) {
-      winorloss();
-    } else {
+  console.log(secplayer);
+  function wic2() {   
       currentplayer2 -= 1;
       curentwicket.innerHTML = currentplayer2;
-    }
+      if (currentplayer2 == 0) {
+        bluer();
+      winorloss();
+      }
+   
   }
   divwicket.addEventListener("click", wic2);
   wicketrun.addEventListener("click", wic2);
