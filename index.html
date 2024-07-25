@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>cricket</title>
+</head>
+
+<body>
+  <div class="title">
+    <h1 class="display-4" id="d_team">Team 1 information</h1>
+    <h1 class="display-3" id="wining"></h1>
+    <h3 class="refresh"></h3>
+
+  </div>
+  <div class="input">
+    <form action="" method="request">
+      <table>
+        <tr>
+          <td><label for="u_over">Enter over: </label>
+          </td>
+          <td><input type="number" class="u_over" name="over" placeholder="Enter currect value" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="u_player">Enter number of player: </label>
+          </td>
+          <td> <input type="number" class="u_player" name="player" placeholder="Enter currect value" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="submit" id="submit" name="sub">
+            <input type="submit" value="second inning" id="second_inning" name="sub">
+          </td>
+        </tr>
+      </table>
+
+
+    </form>
+  </div>
+  <div class="interact container">
+    <div id="noball" class="extra">
+      <p>nb</p>
+    </div>
+    <div id="wideball" class="extra">
+      <p>wb</p>
+    </div>
+    <div id="nofour" class="extra">
+      <p>nf</p>
+    </div>
+    <div id="wicket" class="count">
+      <p>w</p>
+    </div>
+    <div id="wicketrun" class="count">
+      <p>ro</p>
+    </div>
+    <div id="zero" class="count">
+      <p>db</p>
+    </div>
+    <div id="one" class="count">
+      <p>1</p>
+    </div>
+    <div id="two" class="count">
+      <p>2</p>
+    </div>
+    <div id="three" class="count">
+      <p>3</p>
+    </div>
+    <div id="four" class="count">
+      <p>4</p>
+    </div>
+    <div id="six" class="count">
+      <p>6</p>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <div class="container main">
+    <div class="box container" id="showwicket">
+      <p>wicket:</p>
+      <span id="curentwicket"></span>
+      <span>||</span>
+      <span id="wic"></span>
+    </div>
+    <div class="box container" id="over">
+      <p>over:</p>
+      <span id="curentover"></span>
+      <span>||</span>
+      <span id="totalover"></span>
+    </div>
+    <div class="box container" id="run">
+      <p>run:</p>
+      <span id="showrun">0</span>
+    </div>
+    <div class="box container" id="tofour">
+      <p>totalfours:</p>
+      <span id="totalfour">0</span>
+    </div>
+    <div class="box container" id="tosix">
+      <p>totalsixes:</p>
+      <span id="totalsix">0</span>
+    </div>
+    <div class="box container" id="showteam1">
+      <p>team1:score</p>
+      <span id="team1"></span>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+
+</html>
